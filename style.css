@@ -48,7 +48,6 @@ main {
 .card {
   width: 28%;
   height: 600px;
-  border: 1px dashed black;
   margin: 20px 30px;
 }
 
