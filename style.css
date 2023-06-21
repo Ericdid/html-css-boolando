@@ -10,12 +10,17 @@
 .flex {
   display: flex;
 }
+.wrap {
+  flex-wrap: wrap;
+}
+/* HEADER */
 header {
   width: 100%;
   height: 50px;
   background-color: #ff6900;
   color: whitesmoke;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 1;
 }
 .utils {
   justify-content: space-around;
@@ -31,4 +36,82 @@ header {
 header > div > a {
   color: whitesmoke;
   text-decoration: none;
+}
+/* MAIN */
+main {
+  padding-top: 51px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.card {
+  width: 28%;
+  height: 600px;
+  border: 1px dashed black;
+  margin: 20px 30px;
+}
+.card-item-one {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-image: url(./img/1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-item-two {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-image: url(./img/2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-txt {
+  text-align: center;
+}
+
+.price {
+  color: red;
+  font-size: 1.5rem;
+}
+/* ABSOLUTE ELEMENTS */
+.heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
+.discount {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  color: whitesmoke;
+  background-color: red;
+}
+.item-info {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  background-color: green;
+  color: whitesmoke;
+}
+/* HOVER EFFECTS */
+.card-item-one:hover {
+  background-image: url(./img/1b.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.card-item-two:hover {
+  background-image: url(./img/2b.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.card:hover .heart {
+  color: red;
 }
